@@ -1,0 +1,365 @@
+/* Importing Google Fonts */
+@import url('https:fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto&display=swap');
+
+/* Setting color variable */
+:root {
+    --primary-color: #FF7A00;
+    --secondary-color: #7C7C7C;
+}
+
+body {
+    background-color: #1E1E1E;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    border: 6px solid #FF0000;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.mr-5 {
+    margin-right: 20px;
+}
+
+hr {
+    width: 1146px;
+    margin-top: 22px;
+    color: #5E5E5E;
+    opacity: .5;
+}
+
+/* Styling container */
+.container {
+    max-width: 1342px;
+    margin: 0 auto;
+
+}
+
+#reviews_part,
+#button_Part {
+    padding: 50px 0px;
+}
+
+.review_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Reviews Part */
+.review_container {
+    padding: 31px 51px;
+}
+
+.review_header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    width: 387px;
+}
+
+.review_full_container {
+    width: auto;
+    clip-path: polygon(0 0, 38% 0, 40% 17%, 100% 17%, 100% 80%, 96% 100%, 0 120%, 0% 43%);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.review_container {
+    width: auto;
+    height: 15rem;
+    margin: auto;
+    clip-path: polygon(0 0, 38% 0, 40% 17%, 100% 17%, 100% 80%, 96% 100%, 0 120%, 0% 43%);
+    border-radius: 10px;
+    background: black;
+}
+
+.width_set {
+    width: 500px;
+    clip-path: polygon(0 0, 48% 0, 56% 26%, 100% 26%, 100% 82%, 91% 100%, 0 100%, 0% 43%);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.width {
+    width: 500px;
+    height: 15rem;
+    margin: auto;
+    clip-path: polygon(0 0, 48% 0, 56% 26%, 100% 26%, 100% 82%, 91% 100%, 0 100%, 0% 43%);
+    border-radius: 10px;
+    background: black;
+}
+
+.review_part {
+    padding: 14px 20px;
+}
+
+/* customer reviews */
+.customer_review {
+    display: flex;
+    align-items: center;
+    clear: both;
+}
+
+.bottom_border {
+    text-align: right;
+    margin: 20px 0px;
+    border-bottom: 1px solid #5E5E5E;
+}
+
+.bottom_border p {
+    margin-bottom: 8px;
+}
+
+.customer_review_image {
+    width: 60px;
+    /* Set a fixed width */
+    height: 60px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Preserve the aspect ratio and fill the container */
+    margin-right: 18px;
+    /* Optional: Add some spacing between the image and details */
+}
+
+.customer_review_details {
+    flex-grow: 1;
+}
+
+.customer_review_details * {
+    margin: 0;
+    /* Remove default margins from all elements within customer_review_details */
+}
+
+/* Review footer */
+.social_activities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_img {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.reply_img {
+    margin-right: 10px;
+}
+
+.element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.element span {
+    margin-left: 10px;
+}
+
+.myComponnets {
+    display: flex;
+    width: 500px;
+}
+
+.ratings_review ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+    left: -222px;
+    top: 12px;
+}
+
+.ratings_review ul li {
+    margin-left: 5px;
+}
+
+.ratings,
+.ratings_review {
+    color: gold;
+    /* Set the color to golden */
+}
+
+.ratings ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: -2;
+}
+
+.ratings li {
+    margin-right: 5px;
+    /* Add spacing between stars */
+}
+
+.ratings li:last-child {
+    color: white;
+    /* Add spacing between stars */
+}
+
+
+.review_single_part {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Responsive container */
+@media only screen and (max-width: 1366px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Button group */
+.button_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-2 {
+    margin-top: 20px;
+}
+
+.button1 {
+    --background-color: black;
+    --border-color: var(--primary-color);
+    --border-width: 2px;
+    --edge-size: 0.5em;
+    color: white;
+    cursor: pointer;
+    background: var(--background-color);
+    padding: 16px 50px;
+    border: 0;
+    font-size: 16px;
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    clip-path: polygon(var(--edge-size) 0%,
+            100% 0,
+            100% calc(100% - var(--edge-size)),
+            calc(100% - var(--edge-size)) 100%,
+            0 100%,
+            0% var(--edge-size));
+    transition: color 250ms;
+}
+
+.button1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--border-color);
+    z-index: -2;
+}
+
+.button1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--background-color);
+    z-index: -1;
+    clip-path: polygon(var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+            calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            calc(var(--border-width)) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+}
+
+.button1:hover {
+    color: white;
+}
+
+.button1:hover::after {
+    clip-path: polygon(50% 50%,
+            50% 50%,
+            50% 50%,
+            50% 50%,
+            50% 50%,
+            50% 50%);
+
+    clip-path: polygon(calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+}
+
+/* button-2 */
+.button2 {
+    --background-color: var(--primary-color);
+    --border-color: var(--primary-color);
+    --border-width: 2px;
+    --edge-size: 0.5em;
+    color: white;
+    cursor: pointer;
+    background: var(--background-color);
+    padding: 16px 50px;
+    border: 0;
+    font-size: 16px;
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    clip-path: polygon(var(--edge-size) 0%,
+            100% 0,
+            100% calc(100% - var(--edge-size)),
+            calc(100% - var(--edge-size)) 100%,
+            0 100%,
+            0% var(--edge-size));
+    transition: color 250ms;
+}
+
+.button2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--primary-color);
+    z-index: -2;
+}
+
+.button2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(red);
+    z-index: -1;
+    clip-path: polygon(var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+            calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            calc(var(--border-width)) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+}
+
+.button2:hover::after {
+    clip-path: polygon(50% 50%,
+            50% 50%,
+            50% 50%,
+            50% 50%,
+            50% 50%,
+            50% 50%);
+
+    clip-path: polygon(calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+}
